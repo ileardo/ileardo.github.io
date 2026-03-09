@@ -11,9 +11,15 @@
 </head>
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#"><span>lg</span> / portfolio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="#about">about</a></li>
       <li><a href="#projects">projects</a></li>
@@ -24,8 +30,12 @@
 
   <!-- HERO -->
   <div class="hero">
+    <div class="hero-grid-bg"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-status"><span class="status-dot"></span> Available for collaboration</div>
 
     <p class="hero-eyebrow">Research Fellow · University of Siena</p>
 
@@ -53,7 +63,7 @@
   </div>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="reveal">
     <div class="section-header">
       <span class="section-num">01</span>
       <h2>About</h2>
@@ -86,23 +96,23 @@
       </div>
 
       <div class="about-stats">
-        <div class="stat-item">
+        <div class="stat-item reveal-item" style="--reveal-delay: 0s">
           <div class="stat-label">Current position</div>
           <div class="stat-value">Research Fellow · Univ. di Siena</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item" style="--reveal-delay: 0.1s">
           <div class="stat-label">Current project</div>
           <div class="stat-value">FRESIA — Federated RL for renewable energy communities (FSE+)</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item" style="--reveal-delay: 0.2s">
           <div class="stat-label">Education</div>
           <div class="stat-value">M.Sc. Robotics Engineering · Univ. di Perugia</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item" style="--reveal-delay: 0.3s">
           <div class="stat-label">Collaborations</div>
           <div class="stat-value">Washington University in St. Louis · Karlstad University</div>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal-item" style="--reveal-delay: 0.4s">
           <div class="stat-label">Contact</div>
           <div class="stat-value"><a href="mailto:leonardo.guiducci.94@gmail.com">leonardo.guiducci.94@gmail.com</a></div>
         </div>
@@ -113,7 +123,7 @@
   <div class="full-divider"></div>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="reveal">
     <div class="section-header">
       <span class="section-num">02</span>
       <h2>Projects</h2>
@@ -123,7 +133,7 @@
     <div class="projects-grid">
 
       <!-- Solar Forecasting MLOps -->
-      <a class="project-card" href="https://github.com/ileardo/solar-forecasting-mlops" target="_blank" rel="noopener">
+      <a class="project-card reveal-item" style="--reveal-delay: 0s" href="https://github.com/ileardo/solar-forecasting-mlops" target="_blank" rel="noopener">
         <div class="project-card-top">
           <div class="project-icon energy">☀️</div>
           <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -152,7 +162,7 @@
       </a>
 
       <!-- E-VAT -->
-      <a class="project-card" href="https://github.com/isarlab-department-engineering/e-vat" target="_blank" rel="noopener">
+      <a class="project-card reveal-item" style="--reveal-delay: 0.15s" href="https://github.com/isarlab-department-engineering/e-vat" target="_blank" rel="noopener">
         <div class="project-card-top">
           <div class="project-icon robot">🤖</div>
           <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -180,7 +190,7 @@
       </a>
 
       <!-- SmartCer -->
-      <a class="project-card" href="https://github.com/unisi-lab305/SmartCer" target="_blank" rel="noopener">
+      <a class="project-card reveal-item" style="--reveal-delay: 0.3s" href="https://github.com/unisi-lab305/SmartCer" target="_blank" rel="noopener">
         <div class="project-card-top">
           <div class="project-icon smart">⚡</div>
           <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -212,7 +222,7 @@
   <div class="full-divider"></div>
 
   <!-- PUBLICATIONS -->
-  <section id="publications">
+  <section id="publications" class="reveal">
     <div class="section-header">
       <span class="section-num">03</span>
       <h2>Publications</h2>
@@ -221,7 +231,7 @@
 
     <div class="pub-list">
 
-      <a class="pub-item" href="https://doi.org/10.3390/app16020710" target="_blank" rel="noopener">
+      <a class="pub-item reveal-item" style="--reveal-delay: 0s" href="https://doi.org/10.3390/app16020710" target="_blank" rel="noopener">
         <div class="pub-year">2026</div>
         <div>
           <span class="pub-venue-badge badge-appl">Applied Sciences</span>
@@ -231,7 +241,7 @@
         <div class="pub-arrow">↗</div>
       </a>
 
-      <a class="pub-item" href="#" target="_blank" rel="noopener">
+      <a class="pub-item reveal-item" style="--reveal-delay: 0.08s" href="#" target="_blank" rel="noopener">
         <div class="pub-year">2025</div>
         <div>
           <span class="pub-venue-badge badge-conf">ESANN 2025</span>
@@ -241,7 +251,7 @@
         <div class="pub-arrow">↗</div>
       </a>
 
-      <a class="pub-item" href="https://ieeexplore.ieee.org/document/10570468" target="_blank" rel="noopener">
+      <a class="pub-item reveal-item" style="--reveal-delay: 0.16s" href="https://ieeexplore.ieee.org/document/10570468" target="_blank" rel="noopener">
         <div class="pub-year">2024</div>
         <div>
           <span class="pub-venue-badge badge-conf">MECO 2024</span>
@@ -251,7 +261,7 @@
         <div class="pub-arrow">↗</div>
       </a>
 
-      <a class="pub-item" href="https://doi.org/10.1109/MECO58584.2023.10154979" target="_blank" rel="noopener">
+      <a class="pub-item reveal-item" style="--reveal-delay: 0.24s" href="https://doi.org/10.1109/MECO58584.2023.10154979" target="_blank" rel="noopener">
         <div class="pub-year">2023</div>
         <div>
           <span class="pub-venue-badge badge-conf">MECO 2023</span>
@@ -261,7 +271,7 @@
         <div class="pub-arrow">↗</div>
       </a>
 
-      <a class="pub-item" href="https://doi.org/10.1109/LRA.2022.3150866" target="_blank" rel="noopener">
+      <a class="pub-item reveal-item" style="--reveal-delay: 0.32s" href="https://doi.org/10.1109/LRA.2022.3150866" target="_blank" rel="noopener">
         <div class="pub-year">2022</div>
         <div>
           <span class="pub-venue-badge badge-ieee">IEEE RA-L</span>
@@ -274,6 +284,13 @@
     </div>
   </section>
 
+  <!-- FOOTER CTA -->
+  <div class="footer-cta reveal">
+    <h3>Let's connect</h3>
+    <p>Interested in collaboration on Deep Reinforcement Learning, Computer Vision, or energy systems research?</p>
+    <a class="btn btn-primary" href="mailto:leonardo.guiducci.94@gmail.com">Get in touch ↗</a>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-name">Leonardo Guiducci · Siena, IT</div>
@@ -283,6 +300,99 @@
       <a href="mailto:leonardo.guiducci.94@gmail.com">Email</a>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* ── Scroll progress bar ── */
+    const progressBar = document.querySelector('.scroll-progress');
+
+    /* ── Nav scroll state ── */
+    const nav = document.querySelector('nav');
+    let ticking = false;
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        const scrollY = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+        progressBar.style.width = progress + '%';
+
+        if (scrollY > 80) {
+          nav.classList.add('nav-scrolled');
+        } else {
+          nav.classList.remove('nav-scrolled');
+        }
+        ticking = false;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* ── Hamburger toggle ── */
+    const toggle = document.querySelector('.nav-toggle');
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ── Scroll reveal (IntersectionObserver) ── */
+    var revealEls = document.querySelectorAll('.reveal, .reveal-item');
+    if ('IntersectionObserver' in window) {
+      var revealObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+      revealEls.forEach(function (el) { revealObs.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add('revealed'); });
+    }
+
+    /* ── Active nav link ── */
+    var sections = document.querySelectorAll('section[id]');
+    var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    if ('IntersectionObserver' in window && sections.length) {
+      var navObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.getAttribute('id');
+            navLinks.forEach(function (link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { threshold: 0.3, rootMargin: '-80px 0px -40% 0px' });
+
+      sections.forEach(function (s) { navObs.observe(s); });
+    }
+
+    /* ── Project card mouse glow ── */
+    document.querySelectorAll('.project-card').forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var rect = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+        card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+      });
+    });
+
+  })();
+  </script>
 
 </body>
 </html>
