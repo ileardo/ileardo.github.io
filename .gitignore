@@ -1,0 +1,19 @@
+# Project-specific
+docs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+CLAUDE.md
