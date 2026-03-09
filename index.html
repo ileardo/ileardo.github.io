@@ -1,7 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Guiducci — AI Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#"><span>lg</span> / portfolio</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#publications">publications</a></li>
+      <li><a href="mailto:leonardo.guiducci.94@gmail.com">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <p class="hero-eyebrow">Research Fellow · University of Siena</p>
+
+    <h1>Leonardo<br><em>Guiducci</em></h1>
+
+    <p class="hero-sub">
+      Applied AI researcher bridging Deep Reinforcement Learning and Computer Vision
+      with real-world systems — from energy grids to clinical decision support.
+    </p>
+
+    <div class="hero-tags">
+      <span class="tag accent">Deep Reinforcement Learning</span>
+      <span class="tag teal">Computer Vision</span>
+      <span class="tag blue">Energy Management</span>
+      <span class="tag">MLOps</span>
+      <span class="tag">Healthcare AI</span>
+      <span class="tag">Robotics</span>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">View projects ↓</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/leonardo-guiducci" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/ileardo" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>About</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Research Fellow at the <strong>Interaction Design Lab, University of Siena</strong>,
+          working under Prof. Antonio Rizzo on AI applications for energy management and healthcare.
+          My background is in Robotics Engineering (University of Perugia), which gives me a strong
+          foundation in autonomous systems and algorithm development.
+        </p>
+        <p>
+          My research spans two main threads. In <strong>energy systems</strong>, I develop
+          Deep Reinforcement Learning and federated learning approaches for microgrid control,
+          Battery Energy Storage Systems, and renewable energy communities.
+          In <strong>healthcare</strong>, I work on Computer Vision pipelines for clinical environments
+          and dialogical AI systems for decision support.
+        </p>
+        <p>
+          I'm particularly interested in the gap between research prototypes and deployable systems —
+          building things that actually run in hospitals, factories, and energy grids.
+        </p>
+        <p>
+          Selected for <strong>Google's CrescerAI initiative</strong>, recognising contributions to AI
+          research in Italy.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-label">Current position</div>
+          <div class="stat-value">Research Fellow · Univ. di Siena</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Current project</div>
+          <div class="stat-value">FRESIA — Federated RL for renewable energy communities (FSE+)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Education</div>
+          <div class="stat-value">M.Sc. Robotics Engineering · Univ. di Perugia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Collaborations</div>
+          <div class="stat-value">Washington University in St. Louis · Karlstad University</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Contact</div>
+          <div class="stat-value"><a href="mailto:leonardo.guiducci.94@gmail.com">leonardo.guiducci.94@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Solar Forecasting MLOps -->
+      <a class="project-card" href="https://github.com/ileardo/solar-forecasting-mlops" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <div class="project-icon energy">☀️</div>
+          <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="project-title">Solar Forecasting MLOps</div>
+        <div class="project-desc">
+          End-to-end MLOps pipeline for 24-hour solar power generation forecasting.
+          Production-ready infrastructure with XGBoost, MLflow experiment tracking,
+          Prefect orchestration, Evidently drift monitoring, and Grafana dashboards —
+          all containerised with Docker Compose.
+          <br><br>
+          Capstone project for the <em>MLOps Zoomcamp</em> (DataTalksClub).
+        </div>
+        <div class="project-meta">
+          <span class="project-tag pt-amber">XGBoost</span>
+          <span class="project-tag pt-blue">MLflow</span>
+          <span class="project-tag pt-teal">Prefect</span>
+          <span class="project-tag pt-grey">Docker</span>
+          <span class="project-tag pt-grey">Grafana</span>
+          <span class="project-tag pt-grey">Evidently</span>
+        </div>
+        <div class="project-footer">
+          <span>ileardo/solar-forecasting-mlops</span>
+          <span>MLOps · Energy</span>
+        </div>
+      </a>
+
+      <!-- E-VAT -->
+      <a class="project-card" href="https://github.com/isarlab-department-engineering/e-vat" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <div class="project-icon robot">🤖</div>
+          <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="project-title">E-VAT</div>
+        <div class="project-desc">
+          Asymmetric End-to-End Deep Reinforcement Learning system for visual active
+          exploration and target tracking in unknown environments. Uses an asymmetric
+          actor-critic architecture with a Target-Detection Network and
+          Exploration-Tracking Network.
+          <br><br>
+          Published in <em>IEEE Robotics and Automation Letters</em>, vol. 7, April 2022.
+        </div>
+        <div class="project-meta">
+          <span class="project-tag pt-blue">Deep RL</span>
+          <span class="project-tag pt-teal">Computer Vision</span>
+          <span class="project-tag pt-grey">PyTorch</span>
+          <span class="project-tag pt-grey">Robotics</span>
+          <span class="project-tag pt-amber">IEEE RA-L</span>
+        </div>
+        <div class="project-footer">
+          <span>isarlab-department-engineering/e-vat</span>
+          <span>Research · Robotics</span>
+        </div>
+      </a>
+
+      <!-- SmartCer -->
+      <a class="project-card" href="https://github.com/unisi-lab305/SmartCer" target="_blank" rel="noopener">
+        <div class="project-card-top">
+          <div class="project-icon smart">⚡</div>
+          <svg class="project-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <div class="project-title">SmartCer</div>
+        <div class="project-desc">
+          Simulator for renewable energy communities developed as part of the SUMMA project,
+          funded by Repubblica Digitale and a Google grant.
+          Supports modelling of energy flows, storage scheduling, and community-level
+          optimisation for smart grid applications.
+          <br><br>
+          See also: <a href="https://summa.unisi.it/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;">summa.unisi.it ↗</a>
+        </div>
+        <div class="project-meta">
+          <span class="project-tag pt-teal">Energy Communities</span>
+          <span class="project-tag pt-amber">Simulation</span>
+          <span class="project-tag pt-grey">Python</span>
+          <span class="project-tag pt-grey">Smart Grid</span>
+        </div>
+        <div class="project-footer">
+          <span>unisi-lab305/SmartCer</span>
+          <span>Energy · Google Grant</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Publications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="pub-list">
+
+      <a class="pub-item" href="https://doi.org/10.3390/app16020710" target="_blank" rel="noopener">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge badge-appl">Applied Sciences</span>
+          <div class="pub-title">Dialogical AI for Cognitive Bias Mitigation in Medical Diagnosis</div>
+          <div class="pub-authors">Guiducci, Saulle, Dimitri, Valli, Alpini, Tenti, Rizzo</div>
+        </div>
+        <div class="pub-arrow">↗</div>
+      </a>
+
+      <a class="pub-item" href="#" target="_blank" rel="noopener">
+        <div class="pub-year">2025</div>
+        <div>
+          <span class="pub-venue-badge badge-conf">ESANN 2025</span>
+          <div class="pub-title">Introducing Intrinsic Motivation in Elastic Decision Transformers</div>
+          <div class="pub-authors">Guiducci, Dimitri, Palma, Rizzo</div>
+        </div>
+        <div class="pub-arrow">↗</div>
+      </a>
+
+      <a class="pub-item" href="https://ieeexplore.ieee.org/document/10570468" target="_blank" rel="noopener">
+        <div class="pub-year">2024</div>
+        <div>
+          <span class="pub-venue-badge badge-conf">MECO 2024</span>
+          <div class="pub-title">Optimizing Energy Efficiency in Smart Factories: Battery Energy Storage Systems Integration Analysis</div>
+          <div class="pub-authors">Guiducci, Palma, Rizzo</div>
+        </div>
+        <div class="pub-arrow">↗</div>
+      </a>
+
+      <a class="pub-item" href="https://doi.org/10.1109/MECO58584.2023.10154979" target="_blank" rel="noopener">
+        <div class="pub-year">2023</div>
+        <div>
+          <span class="pub-venue-badge badge-conf">MECO 2023</span>
+          <div class="pub-title">A Reinforcement Learning Approach to the Management of Renewable Energy Communities</div>
+          <div class="pub-authors">Guiducci, Palma, Stentati, Rizzo, Paoletti</div>
+        </div>
+        <div class="pub-arrow">↗</div>
+      </a>
+
+      <a class="pub-item" href="https://doi.org/10.1109/LRA.2022.3150866" target="_blank" rel="noopener">
+        <div class="pub-year">2022</div>
+        <div>
+          <span class="pub-venue-badge badge-ieee">IEEE RA-L</span>
+          <div class="pub-title">E-VAT: An Asymmetric End-to-End Approach to Visual Active Exploration and Tracking</div>
+          <div class="pub-authors">Dionigi, Devo, Guiducci, Costante</div>
+        </div>
+        <div class="pub-arrow">↗</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name">Leonardo Guiducci · Siena, IT</div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/leonardo-guiducci" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ileardo" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:leonardo.guiducci.94@gmail.com">Email</a>
+    </div>
+  </footer>
+
 </body>
 </html>
